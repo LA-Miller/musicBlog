@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link ref="text/CSS" rel="stylesheet" href="style.css" />
+    <title>Music Blog</title>
+    <!-- 
+        Holds metadata / information we don't see. - links, viewport info, document title, etc.
+    -->
+    <!-- 3 ways to use CSS with our document:
+        1. Embed the CSS within a <style> tag.
+        2. Inline styling within another element.
+        3. Link a stylesheet to our html document. -->
+
+    <!-- <style>
+        body {
+            background-color: black;
+        }
+    </style> -->
+</head>
+
+<!-- Inline styling takes precedence over the styling in the <head> -->
+<!-- <body style="background-color: green;">  -->
+
+<body>
+
+    <header>
+        <h1>Music Blog</h1>
+
+        <nav>
+            <Ul>
+                <!-- (li>span{Home})+(li>a)*3 -->
+                <!-- <span> tag is a div with a certain type of styling to it. -->
+                <li><span>Home</span></li>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Forum</a></li>
+            </Ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome</h2>
+        <!-- Main specifies the main content. 
+        There can only be one!
+        Cannot be a descendant (child) of: 
+            - header, nav, article, aside, footer -->
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequatur incidunt neque,
+                    voluptas obcaecati quasi debitis eos esse. Ducimus optio at cumque vitae corporis ipsa quibusdam
+                    nobis eligendi asperiores officiis!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius numquam explicabo eveniet ipsam
+                    ducimus voluptatum eum dolorum, magni consequuntur in sunt doloremque laudantium veritatis
+                    perferendis maiores exercitationem similique, culpa cumque?
+
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ex, quis laudantium dolore
+                    reiciendis, hic iure laborum, itaque esse culpa nam adipisci sint voluptate soluta distinctio
+                    nostrum illum ducimus animi.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore distinctio vel suscipit
+                    repudiandae magnam. Deleniti nulla velit similique? Suscipit hic omnis atque fugiat corrupti maiores
+                    repellat recusandae debitis enim modi.
+
+                </p>
+            </article>
+
+            <aside>
+                <h2>Favorite Albums</h2>
+                <!-- (a>img)*4 -->
+                <a target="_blank" href="./assets/220px-Carterfive.jpeg"><img src="./assets/220px-Carterfive.jpeg"
+                        alt="Tha Carter V by Lil Wayne"></a>
+                <a target="_blank" href="./assets/220px-Post_Malone_-_Hollywood's_Bleeding.png"><img
+                        src="./assets/220px-Post_Malone_-_Hollywood's_Bleeding.png"
+                        alt="Hollywood's Bleeding by Post Malone"></a>
+                <a target="_blank" href="./assets/220px-Stoneyalbum.jpg"><img src="./assets/220px-Stoneyalbum.jpg"
+                        alt="Stoney by Post Malone"></a>
+                <a target="_blank" href="./assets/R-14371978-1573198976-8180.jpeg.jpg"><img
+                        src="./assets/R-14371978-1573198976-8180.jpeg.jpg" alt="Where the Light Is by Surfaces"></a>
+            </aside>
+        </main>
+    </section>
+
+    <!-- Footers can contain: authorship info, copyright, contact info, a sitemap, related links/documents, back to top link -->
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, maxime, 2021 by Luke Miller</p>
+    </footer>
+
+
+</body>
+
+</html>
